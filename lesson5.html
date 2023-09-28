@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let temperature = 25; // откроется только в консоле
+        if (temperature >= 30) {
+            console.log("Go to walk");
+        }
+        if (temperature >= 20) {
+            console.log("Good the weather");
+        }
+        if (temperature >= 5) {
+            console.log("So cold");
+        }
+        if (temperature < 5) {
+            console.log("It's winter");
+        }
+    </script>
+    <script>
+        let isStrawberryAvailable = false;
+        let isMangoAvailable = false;
+        let isHazelnutAvailable = true;
+        let ischocolateAvailable = true;
+        if (isStrawberryAvailable === true) {
+            console.log("buy strawberry");
+        } else if (isMangoAvailable === true) {
+            console.log("buy Mango");
+        } else if (isHazelnutAvailable === true) {
+            console.log("buy Hazelnut");
+        } else if (ischocolateAvailable === true) {
+            //document.body.textContent выводит на лист html
+            console.log("buy Schocolate");
+        }
+    </script>
+    <script>
+        let budget = 2;
+        let milkPrice = 2;
+        let cheesePrice = 4;
+        let breadPrice = 2;
+        let butterPrice = 1;
+        if (budget >= milkPrice) {
+            console.log("buy milk");
+            budget -= 2;
+        } 
+        if (budget >= cheesePrice) {
+            console.log("buy cheese");
+            budget -= 4;
+        } 
+        if (budget >= breadPrice) {
+            console.log("buy bread");
+            budget -= 2;
+        } 
+        // 1 >= 1 ?
+        if (budget >= butterPrice) {
+            console.log("buy butter");
+            budget -= 1;
+        } 
+        console.log("your budget yet " + budget);
+    </script>
+</body>
+
+</html>
