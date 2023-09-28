@@ -45,6 +45,7 @@
         let cheesePrice = 4;
         let breadPrice = 2;
         let butterPrice = 1;
+        let boughtBread = false;
         if (budget >= milkPrice) {
             console.log("buy milk");
             budget -= 2;
@@ -56,9 +57,10 @@
         if (budget >= breadPrice) {
             console.log("buy bread");
             budget -= 2;
+            boughtBread = true;
         } 
         // 1 >= 1 ?
-        if (budget >= butterPrice) {
+        if (budget >= butterPrice && boughtBread) {
             console.log("buy butter");
             budget -= 1;
         } 
