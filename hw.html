@@ -9,11 +9,83 @@
 
 <body>
     <script>
-    let sales = 0;
-    if () {
+        //Exercise 1:
+        let sales = 0;
+        if (sales >= 70 && sales <= 99) {
             console.log("Sales are: " + sales + ". Are they between 70 and 99?", true);
         } else {
             console.log("Sales are: " + sales + ". Are they between 70 and 99?", false);
+        }
+        //Exercise 2:
+        let sciFiDepartmentSales = 0;
+        let crimeDepartmentSales = 0;
+        if (sciFiDepartmentSales >= 200 && sciFiDepartmentSales <= 500 || crimeDepartmentSales >= 200 && crimeDepartmentSales <= 500) {
+            console.log(true);
+        } else {
+            console.log(false);
+        }
+        //Exercise 3:
+        let comicBookDepartmentSales = 0;
+        let sciFiDepartmentSales = 0;
+        let crimeDepartmentSales = 0;
+        if (sciFiDepartmentSales >= 200 && sciFiDepartmentSales <= 500 || crimeDepartmentSales >= 200 && crimeDepartmentSales <= 500 || comicBookDepartmentSales >= 200 && comicBookDepartmentSales <= 500) {
+            console.log(true);
+        } else {
+            console.log(false);
+        }
+        //Exercise 4:
+        let cookingDepartmentSales = 0;
+        let drawingDepartmentSales = 0;
+        if (cookingDepartmentSales > 300 && drawingDepartmentSales > 300) {
+            console.log(true);
+        } else {
+            console.log(false);
+        }
+        //Exercise 5:
+        let cookingDepartmentSales = 400;
+        let drawingDepartmentSales = 500;
+        if (cookingDepartmentSales > drawingDepartmentSales) {
+            console.log("Cooking Department, " + cookingDepartmentSales);
+        } else {
+            console.log("Drawing Department, " + drawingDepartmentSales);
+        }
+        //Exercise 6:
+        let comicBook = 10;
+        let sciFiBook = 5;
+        let crimeBook = 18;
+        if (comicBook > sciFiBook && comicBook > crimeBook) {
+            console.log("comic department, " + comicBookDepartmentSales);
+        } else if (sciFiBook > comicBook && sciFiBook > crimeBook) {
+            console.log("sciFi department, " + sciFiBook);
+        } else {
+            console.log("crime department, " + crimeBook);
+        }
+        //Exercise 7:
+        let totalSalesLastYear = 25;
+        let totalSalesGoal = 30;
+        let totalSalesThisYear = 33;
+        if (totalSalesThisYear < totalSalesLastYear) {
+            console.log("=(");
+        } else if (totalSalesThisYear > totalSalesThisYear && totalSalesThisYear < totalSalesGoal) {
+            console.log("good, but we can do better");
+        } else {
+            console.log("YEEEEEEEEEESSSS!");
+        }
+        //Exercise 8:
+        let Firstname = "Smit";
+        let UserLoggin = true;
+        if (UserLoggin) {
+            console.log("Hello " + Firstname);
+        } else {
+            console.log("Hello ");
+        }
+        //Exercise 9:
+        let bookPrice = 16;
+        let DayOfWeek = "Saturday";
+        if (DayOfWeek == "Saturday" || DayOfWeek == "Sunday") {
+            console.log( "price: " + bookPrice * 0.5);
+        } else {
+            console.log("price: " + bookPrice);
         }
     </script>
 </body>
