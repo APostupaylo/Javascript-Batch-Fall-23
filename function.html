@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // ex.1
+        function MyName() {
+            document.body.textContent = "Anna";
+        }
+        MyName();
+
+        //ex.2 
+        function smallerNumber(a, b) {
+            if (a > b) return b;
+            else return a
+        }
+        let result = smallerNumber(1, 2);
+        console.log("min number " + result);
+
+        //or
+        function bigNumber(a, b) {
+            if (a < b) return b;
+            else return a
+        }
+        let result = bigNumber(1, 2);
+        console.log("big number " + result);
+
+        //ex.3 Multiple parametrs and argument
+        //Write a function that takes name of a person, their age, and the language they speak, and returns a string that introduces this person.
+        function Person(name, age, language) {
+            console.log("hello! my name is " + name + ", I am " + age + " years old and I speak " + language);
+        }
+        Person("Owen", "30", "English");
+
+        //Complete the function below in order to make the code to run without errors
+        function square(a) {
+            return a * a;
+        }
+        let result = square(2);
+
+        //Complete the function below in order to get the right result in the console
+
+        function sum(a, b) {
+            return a + b;
+        }
+        let result = sum(2, 3);
+        console.log("The sum of 2 + 3 is:", result);
+
+        //Write a function that given the input values on the left gives the output on the right:
+        function rightNumer(input, output) {
+            return input >= output;
+        }
+        let result = rightNumer(1, 2);
+        console.log(result);
+        /*input => output
+        1, 2 => 2
+        4, 5 => 5
+        99, 5 => 99 
+        100, 100 => 100 */
+
+
+    </script>
+</body>
+
+</html>
