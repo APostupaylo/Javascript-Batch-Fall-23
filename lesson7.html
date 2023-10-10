@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--task one-->
+    <!--<button onclick="ChangeToRed ()" type="button" style="padding: 0 20px;">red</button>
+    <button onclick="ChangeToGreen ()" type="button" style="padding: 0 20px;">green</button>
+    <button onclick="ChangeToBlue ()" type="button" style="padding: 0 20px;">blue</button>
+    <script> //one way
+        function ChangeToRed() {
+            document.body.style.backgroundColor = "red";
+
+        }
+        function ChangeToGreen() {
+            document.body.style.backgroundColor = "green";
+
+        }
+        function ChangeToBlue() {
+            document.body.style.backgroundColor = "blue";
+
+        }
+    </script>-->
+    <!--<button onclick="ChangeColor ('red')" type="button" style="padding: 0 20px;">red</button>
+    <button onclick="ChangeColor ('green')" type="button" style="padding: 0 20px;">green</button>
+    <button onclick="ChangeColor ('blue')" type="button" style="padding: 0 20px;">blue</button>
+    <script> //different
+        function ChangeColor(color) {
+            if (document.body.style.backgroundColor === color) {
+                document.body.style.backgroundColor = "";
+            } else {
+                document.body.style.backgroundColor = color;
+            }
+        }
+    </script>-->
+
+    <!--task two-->
+    <!--<button onclick="count()">number of click</button>
+    <script>
+        let numberOfclick = 0;
+        function count() {
+            console.log("you clicked");
+            numberOfclick += 1;
+            console.log(numberOfclick);
+            //console.log("you clicked" + numberOfclick);
+        }              
+    </script>-->
+
+    <!--task bonus-->
+    <button onclick="rock ()" type="button" style="padding: 0 20px;">Rock</button>
+    <button onclick="paper ()" type="button" style="padding: 0 20px;">Paper</button>
+    <button onclick="scissors ()" type="button" style="padding: 0 20px;">Scissors</button>
+    <script>
+        function rock() {
+            let computerChoice = randomMove();
+            if (computerChoice === "rock") {
+                document.body.style.backgroundColor = "yellow";
+            } else if (computerChoice === "paper") {
+                document.body.style.backgroundColor = "red";
+            } else {
+                document.body.style.backgroundColor = "green";
+            }
+        }
+        function randomMove() {
+            let randomNumber = Math.random();
+            if (randomNumber < 0.33) {
+                return "rock";
+            } else if (randomNumber < 0.66) {
+                return "paper";
+            } else {
+                return "scissors";
+            }
+        }
+    </script>
+
+    <button onclick=" choice ('rock')" type="button" style="padding: 0 20px;">Rock</button>
+    <button onclick=" choice ('paper')" type="button" style="padding: 0 20px;">Paper</button>
+    <button onclick=" choice ('scissors')" type="button" style="padding: 0 20px;">Scissors</button>
+    <script>
+        function play(choice) {
+            let computerChoice = randomMove();
+            if (computerChoice === choice) {
+                document.body.style.backgroundColor = "yellow";
+            } else if ((computerChoice === "paper" && choice === "rock") ||
+                (computerChoice === "rock" && choice === "scissors") ||
+                (computerChoice === "scissors" && choice === "paper")) {
+                document.body.style.backgroundColor = "red";
+            } else {
+                document.body.style.backgroundColor = "green";
+            }
+        }
+        function randomMove() {
+            let randomNumber = Math.random();
+            if (randomNumber < 0.33) {
+                return "rock";
+            } else if (randomNumber < 0.66) {
+                return "paper";
+            } else {
+                return "scissors";
+            }
+        }
+    </script>
+</body>
+
+</html>
