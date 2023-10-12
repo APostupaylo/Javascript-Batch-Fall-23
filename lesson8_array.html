@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>//array массив
+        let listMyFriend = ['Ksenia', 'Anna', 'Ira'];
+        console.log(listMyFriend[0] + ' Hello');
+        console.log(listMyFriend[1] + ' Hello');
+        console.log(listMyFriend[2] + ' Hello');
+    </script>
+
+    <script>
+        let myFriend = ['Ksenia', 'Anna', 'Ira'];
+        myFriend.push('Sacha');
+        let priceTicket = 7;
+        let totalPrice = myFriend.length * priceTicket;
+        let firstFriend = totalPrice / 2;
+        let otherFriend = firstFriend / (myFriend.length - 2);
+        let lastFriend = myFriend.length - 1;
+
+
+        console.log(totalPrice);
+        console.log(myFriend[0] + " " + firstFriend);
+        console.log("each other friend pays", otherFriend);
+        console.log(myFriend[lastFriend] + ' it is your BD');
+    </script>
+</body>
+
+</html>
