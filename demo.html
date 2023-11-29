@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do list</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="moving" href="demo.js">
+</head>
+
+<body>
+    <div class="insertInfo">
+        <h2>My TO DO List</h2>
+        <div id="error" class="error">Please enter a task</div>
+        <div id="tasker-header" class="tasker-header">
+            <input type="text" id="myInput" placeholder="Title...">
+            <span onclick="newElement()" class="addBth">Add</span>
+        </div>
+        <div class="tasker-body">
+            <ul id="tasks"></ul>
+        </div>
+    </div>
+</body>
+
+</html>
+
